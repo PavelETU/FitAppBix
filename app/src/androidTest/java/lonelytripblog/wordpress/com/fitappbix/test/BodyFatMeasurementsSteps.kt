@@ -89,6 +89,11 @@ class BodyFatMeasurementsSteps {
         Espresso.closeSoftKeyboard()
     }
 
+    @And("I hit calculate")
+    fun iHitCalulate() {
+        onView(withText("Calculate")).perform(click())
+    }
+
     @Then("I expect to see {string}% on the screen")
     fun iExpectToSeeOnTheScreen(bodyFatPercentage: String) {
         onView(withText(bodyFatPercentage)).check(matches(isCompletelyDisplayed()))

@@ -19,6 +19,7 @@ Feature: Body fat percentage calculation is correct
     When I click Hip field
     And I type hip "<hip>"
     And I close keyboard
+    And I hit calculate
     Then I expect to see "<bodyFat>"% on the screen
 
   Examples:
