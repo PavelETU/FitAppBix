@@ -25,3 +25,4 @@ Feature: Body fat percentage calculation is correct
   Examples:
     | age | weight | height | neck | waist | hip | bodyFat |
     | 26  | 83     | 182    | 39   | 97    | 103 | 23.5    |
+    | 26  | 83     | 170    | 39   | 97    | 103 | 25.6    |
