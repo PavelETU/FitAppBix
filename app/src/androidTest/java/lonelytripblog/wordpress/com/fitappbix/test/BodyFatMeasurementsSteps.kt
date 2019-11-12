@@ -71,7 +71,7 @@ class BodyFatMeasurementsSteps {
 
     @And("I type waist {string}")
     fun iTypeWaist(waist: String) {
-        onView(withHint("Height")).perform(typeText(waist))
+        onView(withHint("Waist")).perform(typeText(waist))
     }
 
     @When("I click Hip field")
@@ -90,7 +90,7 @@ class BodyFatMeasurementsSteps {
     }
 
     @And("I hit calculate")
-    fun iHitCalulate() {
+    fun iHitCalculate() {
         onView(withText("Calculate")).perform(click())
     }
 
