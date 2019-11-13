@@ -7,4 +7,6 @@
     <string name="hip">Hip</string>
     <string name="height">Height</string>
     <string name="calculate">Calculate</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>

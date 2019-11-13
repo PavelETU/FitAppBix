@@ -1,6 +1,7 @@
 Feature: Body fat percentage calculation is correct
   Scenario Outline: Enter all parameters and verify answer
     Given I am on body fat percentage measurement screen
+    And I choose Male as gender
     When I click Age field
     And I type age "<age>"
     And I close keyboard
@@ -26,3 +27,4 @@ Feature: Body fat percentage calculation is correct
     | age | weight | height | neck | waist | hip | bodyFat |
     | 26  | 83     | 182    | 39   | 97    | 103 | 23.5    |
     | 26  | 83     | 170    | 39   | 97    | 103 | 25.6    |
+    | 30  | 85     | 170    | 39   | 97    | 80  | 25.6    |
