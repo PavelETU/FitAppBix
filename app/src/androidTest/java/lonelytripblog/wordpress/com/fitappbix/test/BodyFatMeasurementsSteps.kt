@@ -24,9 +24,14 @@ class BodyFatMeasurementsSteps {
         activityRule.launchActivity(null)
     }
 
-    @And("I choose Male as gender")
-    fun iChooseMaleAsGender() {
+    @And("I choose Male as a gender")
+    fun iChooseMaleAsAGender() {
         onView(withText("Male")).perform(click())
+    }
+
+    @And("I choose Female as a gender")
+    fun iChooseFemaleAsAGender() {
+        onView(withText("Female")).perform(click())
     }
 
     @When("I click Age field")
